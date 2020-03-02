@@ -1,0 +1,14 @@
+{
+  "name": "INCENDIO",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:VincentCloud/INCENDIO.git",
+  "author": "Vincent Huang <chenzhun.huang@mail.mcgill.ca>",
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
