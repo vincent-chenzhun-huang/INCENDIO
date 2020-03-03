@@ -2,8 +2,12 @@ import { User } from './models/User'
 
 const user = new User({ name: 'myname', age: 20})
 
-user.on('change', ()=>{
-    
+user.on("change", ()=>{
+    console.log('hello')
 })
 
-console.log(user)
+user.on('change', ()=>{
+    console.log('hello2')
+})
+
+user.trigger('change')

@@ -6,6 +6,7 @@
   "author": "Vincent Huang <chenzhun.huang@mail.mcgill.ca>",
   "license": "MIT",
   "dependencies": {
+    "json-server": "^0.16.1",
     "parcel-bundler": "^1.12.4"
   },
   "devDependencies": {
