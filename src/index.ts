@@ -1,6 +1,13 @@
-import axios from 'axios'
+import { User } from "./models/User"
 
-axios.post('http://localhost:3000/users', {
-    name: 'name',
-    age: 20
+const user = new User({ 
+    name: "another name",
+    age: 1234
+ })
+
+user.set({
+    name: "NAME",
+    age: 100
 })
+
+user.save()
