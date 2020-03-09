@@ -5,9 +5,10 @@ const user = new User({
     age: 1234
  })
 
-user.set({
-    name: "NAME",
-    age: 100
+user.events.on('change', () => {
+    console.log('Hi')
 })
+
+user.events.trigger('change')
 
 user.save()
