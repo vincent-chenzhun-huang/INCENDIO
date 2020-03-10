@@ -11,4 +11,3 @@ user.events.on('change', () => {
 
 user.events.trigger('change')
 
-user.save()

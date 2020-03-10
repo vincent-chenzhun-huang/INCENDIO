@@ -1,10 +1,14 @@
-export class Attribute<T> {
+export class Attributes<T> {
     constructor(private data: T) {
 
     }
 
-    get(propName: string): (number | string | boolean) {
-        return this.data[propName]
+    get<K extends keyof T>(key: K): T[K] {
+        /*
+        Look at the Interface T(UserProps): return the value at the key: K
+        K can only be the keys of T (name, age, id)
+        */ 
+        return this.data[key]
     }
 
     set(update: T): void {
