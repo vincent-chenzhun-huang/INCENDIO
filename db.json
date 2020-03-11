@@ -1,34 +1,8 @@
 {
   "users": [
     {
-      "name": "NAME",
-      "age": 100,
-      "id": 1
-    },
-    {
-      "name": "NAME",
-      "age": 100,
-      "id": 2
-    },
-    {
-      "name": "NAME",
-      "age": 100,
-      "id": 3
-    },
-    {
-      "name": "NAME",
-      "age": 100,
-      "id": 4
-    },
-    {
-      "name": "another name",
-      "age": 1234,
-      "id": 5
-    },
-    {
-      "name": "another name",
-      "age": 1234,
-      "id": 6
+      "id": 1,
+      "name": "another name"
     }
   ]
 }

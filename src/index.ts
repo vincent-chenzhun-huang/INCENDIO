@@ -1,13 +1,13 @@
 import { User } from "./models/User"
 
 const user = new User({ 
-    name: "another name",
-    age: 1234
+    id: 1,
+    name: "another name"
  })
 
-user.events.on('change', () => {
-    console.log('Hi')
+user.events.on('save', () => {
+    console.log(user)
+    console.log('user has been saved')
 })
 
-user.events.trigger('change')
-
+user.save()

@@ -6,7 +6,7 @@ export class Eventing {
 
     events: { [key: string]: Callback[] } = {}      
 
-    on(eventName: string, callback: Callback):void {
+    on = (eventName: string, callback: Callback):void =>{
         /*
         - first, get the handlers for this event, if there is no handler, set handler to []
         - add the callback function to the list of handlers
@@ -17,7 +17,7 @@ export class Eventing {
         this.events[eventName] = handlers
     }
 
-    trigger(eventName: string): void {
+    trigger = (eventName: string): void => {
         /*
         - get the list of handlers for this eventName
         - if it's empty, do nothing
